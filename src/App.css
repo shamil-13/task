@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  padding: 12px;
+  max-width: 1200px;
+  margin:0 auto
+
+}
+
+.tiles-layout {
+  /* display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  height:70vh;
+  overflow-y: auto; */
+
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+.tile {
+  padding: 6px;
+}
+.card-content {
+  height: 150px;
+  overflow-y: auto;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+.no-data {
+  height: 300px;
+  text-align: center;
+  width: 100%;
+  color: red;
+  padding-top: 50px;
+}
+
+
+
+@media (min-width: 600px) {
+  .tiles-layout { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .tiles-layout { grid-template-columns: repeat(3, 1fr); }
+}
